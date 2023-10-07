@@ -1,32 +1,26 @@
+/* Reset some default styles */
 body, html {
     margin: 0;
     padding: 0;
     background-color: #111; /* Dark background color */
     font-family: "Times New Roman", serif;
     color: #fff; /* White text color */
+    height: 100%; /* Ensure the document takes up the full viewport height */
   }
   
   /* Center all content vertically and horizontally */
   body {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Adjust to start content from the top */
     min-height: 100vh;
   }
   
   /* Header Styles */
   header {
     text-align: center;
-  }
-  
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  header p {
-    font-size: 18px;
-    font-style: italic;
+    margin-top: 20px; /* Add some spacing at the top */
   }
   
   /* Navigation Menu */
@@ -34,6 +28,7 @@ body, html {
     background-color: #222; /* Darker background for navigation */
     padding: 15px;
     text-align: center;
+    width: 100%; /* Expand navigation to full width */
   }
   
   nav a {
@@ -47,23 +42,7 @@ body, html {
   section {
     text-align: center;
     padding: 30px;
-  }
-  
-  /* Crow Theme */
-  .crow-logo {
-    font-size: 48px;
-    color: #f60; /* Crow's eye color */
-  }
-  
-  .crow-theme {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  /* Dark Gradients */
-  .gradient-background {
-    background: linear-gradient(135deg, #333, #111); /* Dark gradient background */
+    width: 100%; /* Expand content to full width */
   }
   
   /* Footer Styles */
@@ -72,26 +51,14 @@ body, html {
     text-align: center;
     padding: 15px;
     font-size: 16px;
-  }
-  
-  /* Links Styles */
-  a {
-    text-decoration: none;
-    color: #f60; /* Crow's eye color for links */
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Example for Dark Poetry Content */
-  .poetry {
-    font-size: 20px;
-    line-height: 1.5;
+    width: 100%; /* Expand footer to full width */
+    margin-top: 20px; /* Add spacing between content and footer */
   }
   
   /* Example for Crow Image */
   .crow-image {
     max-width: 100%;
     height: auto;
+    margin-top: 20px; /* Add spacing below the image */
   }
+  
