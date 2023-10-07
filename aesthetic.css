@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Dark background color */
+    font-family: "Times New Roman", serif;
+    color: #fff; /* White text color */
+  }
+  
+  /* Center all content vertically and horizontally */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  /* Navigation Menu */
+  nav {
+    background-color: #222; /* Darker background for navigation */
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  /* Content Section */
+  section {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  /* Crow Theme */
+  .crow-logo {
+    font-size: 48px;
+    color: #f60; /* Crow's eye color */
+  }
+  
+  .crow-theme {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Dark Gradients */
+  .gradient-background {
+    background: linear-gradient(135deg, #333, #111); /* Dark gradient background */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  /* Links Styles */
+  a {
+    text-decoration: none;
+    color: #f60; /* Crow's eye color for links */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Example for Dark Poetry Content */
+  .poetry {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Example for Crow Image */
+  .crow-image {
+    max-width: 100%;
+    height: auto;
+  }
