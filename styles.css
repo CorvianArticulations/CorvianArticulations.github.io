@@ -1,0 +1,39 @@
+body.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+body.light-theme {
+    background-color: #fff;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#newest-work {
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+}
+
+input[type="search"] {
+    padding: 0.5em;
+}
