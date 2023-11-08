@@ -3,34 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CorvianArticulations</title>
-    <link rel="stylesheet" href="aesthetic.css">
+    <title>Crow - Poetry & Prose</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme-switcher.js" defer></script>
 </head>
-<body>
+<body class="dark-theme">
     <header>
+        <button id="theme-switcher">Dark/Light</button>
         <h1>Crow</h1>
-        <p>Disgrace reversed the crow's hue from white to black, because offense was given by his chattering tongue.</p>
+        <input type="search" id="search-box" placeholder="Search...">
     </header>
-
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Poems</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#prose">Prose</a> | 
+        <a href="#poetry">Poetry</a>
     </nav>
-
-    <section class="gradient-background">
-        <div class="crow-logo">𝓬</div>
-        <div class="crow-theme">Embrace the Darkness</div>
-        <p class="poetry">In the shadows of night,<br>
-        Where the crow takes its flight,<br>
-        Dark verses unfold their might,<br>
-        In this realm, where we write.</p>
-        <img src="crow-image.jpg" alt="Crow Image" class="crow-image">
+    <section id="newest-work">
+        <h2>Newest Work</h2>
+        <!-- Your newest works will be inserted here -->
     </section>
-
-    <footer>
-        &copy; 2023 CorvianArticulations | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-    </footer>
 </body>
 </html>
