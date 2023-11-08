@@ -3,93 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crow's Writing Nook</title>
-<style>
-  body {
-    font-family: 'Times New Roman', serif;
-    background-color: #111; /* Darker background */
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-
-  #theme-switcher {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #333;
-    border: none;
-    border-radius: 20px; /* Rounded corners */
-    padding: 10px 20px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  #search-box {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-  }
-
-  h1, h2 {
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  h1 {
-    font-size: 4rem; /* Larger text */
-  }
-
-  h2 {
-    font-size: 2.5rem; /* Larger text */
-  }
-
-  nav {
-    font-size: 2rem; /* Larger text */
-    margin-bottom: 50px;
-  }
-
-  .content {
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-  }
-</style>
+<title>Crow</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="theme-switch.js"></script>
 </head>
-<body>
-
-<button id="theme-switcher">Dark/Light</button>
-<input type="text" id="search-box" placeholder="Search...">
-
-<h1>Crow</h1>
-
-<nav>
-  <span>Prose</span> | <span>Poetry</span>
-</nav>
-
-<h2>Newest Work</h2>
-
-<!-- This will be where the content gets inserted -->
-<div class="content">
-  <!-- Content will go here -->
-</div>
-
-<script>
-// Javascript to toggle the theme
-document.getElementById('theme-switcher').onclick = function() {
-    document.body.classList.toggle('light-theme');
-};
-</script>
-
+<body class="dark-theme">
+  <header>
+    <button id="theme-switcher" onclick="switchTheme()">Dark/Light</button>
+    <h1>Crow</h1>
+    <input type="search" id="search" placeholder="Search...">
+  </header>
+  <nav>
+    <a href="#prose">Prose</a> | <a href="#poetry">Poetry</a>
+  </nav>
+  <main>
+    <section id="newest-work">
+      <h2>Newest Work</h2>
+      <!-- Content added dynamically -->
+    </section>
+  </main>
 </body>
 </html>
