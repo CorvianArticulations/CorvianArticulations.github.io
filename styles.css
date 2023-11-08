@@ -1,39 +1,81 @@
-body.dark-theme {
-    background-color: #333;
-    color: white;
-}
-
-body.light-theme {
-    background-color: #fff;
-    color: black;
+body {
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-nav a {
-    font-size: 1.5em;
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.5em;
+#theme-switcher {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #555;
+  color: white;
+  transition: background-color 0.5s;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-#newest-work {
-    padding: 1em;
+#theme-switcher:hover {
+  background-color: #777;
 }
 
 h1 {
-    font-family: 'Times New Roman', serif;
+  font-size: 3rem;
+  text-align: center;
 }
 
 input[type="search"] {
-    padding: 0.5em;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: #ddd;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  padding: 2rem;
+}
+
+section#newest-work h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Light theme styles */
+.light-theme {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.light-theme #theme-switcher {
+  background-color: #ddd;
+  color: #333;
+}
+
+.light-theme nav a {
+  color: #555;
+}
+
+.light-theme nav a:hover {
+  color: #222;
 }
