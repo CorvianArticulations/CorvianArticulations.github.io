@@ -3,24 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crow</title>
-<link rel="stylesheet" href="styles.css">
-<script defer src="theme-switch.js"></script>
+<title>Prose and Poetry Collection</title>
+<style>
+  body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .navigation div {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+  }
+  .content {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
 </head>
-<body class="dark-theme">
-  <header>
-    <button id="theme-switcher" onclick="switchTheme()">Dark/Light</button>
-    <h1>Crow</h1>
-    <input type="search" id="search" placeholder="Search...">
-  </header>
-  <nav>
-    <a href="#prose">Prose</a> | <a href="#poetry">Poetry</a>
-  </nav>
-  <main>
-    <section id="newest-work">
-      <h2>Newest Work</h2>
-      <!-- Content added dynamically -->
-    </section>
-  </main>
+<body>
+
+<div class="container">
+  <div class="navigation">
+    <div id="showProse">Prose</div>
+    <div id="showPoetry">Poetry</div>
+  </div>
+  <div class="content" id="proseContent">
+    <!-- Prose content goes here -->
+    <h2>Title of Prose Piece</h2>
+    <p>This is where the prose content will be displayed...</p>
+    <!-- Add more prose pieces here -->
+  </div>
+  <div class="content hidden" id="poetryContent">
+    <!-- Poetry content goes here -->
+    <h2>Title of Poetry Piece</h2>
+    <p>This is where the poetry content will be displayed...</p>
+    <!-- Add more poetry pieces here -->
+  </div>
+</div>
+
+<script>
+document.getElementById('showProse').addEventListener('click', function() {
+  document.getElementById('proseContent').classList.remove('hidden');
+  document.getElementById('poetryContent').classList.add('hidden');
+});
+
+document.getElementById('showPoetry').addEventListener('click', function() {
+  document.getElementById('poetryContent').classList.remove('hidden');
+  document.getElementById('proseContent').classList.add('hidden');
+});
+</script>
+
 </body>
 </html>
