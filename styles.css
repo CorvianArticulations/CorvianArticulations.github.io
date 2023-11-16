@@ -1,81 +1,37 @@
+
 body {
-  font-family: 'Times New Roman', serif;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  color: white;
-  transition: background-color 0.5s, color 0.5s;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
 }
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+    background: #f4f4f4;
+    padding: 15px 0;
+    text-align: center;
 }
-
-#theme-switcher {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 1rem;
-  background-color: #555;
-  color: white;
-  transition: background-color 0.5s;
+header h1 {
+    margin: 0;
 }
-
-#theme-switcher:hover {
-  background-color: #777;
+nav ul {
+    padding: 0;
+    list-style: none;
 }
-
-h1 {
-  font-size: 3rem;
-  text-align: center;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
-
-input[type="search"] {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: none;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
 }
-
-nav a {
-  font-size: 1.5rem;
-  color: #ddd;
-  text-decoration: none;
-  padding: 0.5rem;
+section {
+    padding: 20px;
+    margin: 20px 0;
 }
-
-nav a:hover {
-  color: #fff;
-}
-
-main {
-  padding: 2rem;
-}
-
-section#newest-work h2 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-/* Light theme styles */
-.light-theme {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-.light-theme #theme-switcher {
-  background-color: #ddd;
-  color: #333;
-}
-
-.light-theme nav a {
-  color: #555;
-}
-
-.light-theme nav a:hover {
-  color: #222;
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f4f4f4;
 }
